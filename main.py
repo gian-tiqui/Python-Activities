@@ -1,7 +1,10 @@
-from OOP.Computer import Ram, Processor, GPU, Computer
+from DSA.binary_tree import Node, insert, in_order
 
 if __name__ == '__main__':
 
-    my_computer = Computer(Processor("i5"), GPU("NVIDIA"), Ram(16000))
+    root = Node(5)
 
-    print(my_computer)
+    insert(root, 3)
+    insert(root, 7)
+
+    in_order(root)
