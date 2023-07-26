@@ -1,19 +1,16 @@
 def original_spot(moves: str):
-    u, d = 0, 0
-    l, r = 0, 0
+    moves_dict = {
+        "u": 0,
+        "d": 0,
+        "l": 0,
+        "r": 0
+    }
 
     for c in moves.lower():
-        if c == "u":
-            u += 1
-        elif c == "d":
-            d += 1
-        elif c == "l":
-            l += 1
-        elif c == "r":
-            r += 1
+        moves_dict[c] = moves_dict[c] + 1
 
-    return u == d and l == r
+    return moves_dict["u"] == moves_dict["d"] and moves_dict["l"] == moves_dict["r"]
 
 
 if __name__ == '__main__':
-    print(original_spot("UUDD"))
+    print(original_spot("UUD"))
