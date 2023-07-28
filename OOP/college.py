@@ -10,4 +10,4 @@ class Building:
     def __init__(self, building_num, name):
         self.building_num = building_num
         self.name = name
-        self.floor_amount = 4
+        self.max_floor_level = 4

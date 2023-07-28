@@ -12,5 +12,12 @@ def original_spot(moves: str):
     return moves_dict["u"] == moves_dict["d"] and moves_dict["l"] == moves_dict["r"]
 
 
+def find_k_max(lst, n):
+    max_nums = []
+
+    return max_nums
+
+
 if __name__ == '__main__':
     print(original_spot("UUD"))
+    print(find_k_max([1, 2, 3, 4, 5, 6], 2))
