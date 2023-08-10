@@ -6,3 +6,7 @@ def zip_test():
     d = {key: val + val2 for key, val, val2 in zip(lst, lst2, lst3)}
 
     print(d)
+
+
+def zip_test_2():
+    pass
